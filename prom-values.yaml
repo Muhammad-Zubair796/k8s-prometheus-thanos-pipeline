@@ -1,0 +1,9 @@
+grafana:
+  enabled: true
+prometheus:
+  prometheusSpec:
+    retention: 2d
+    thanos:
+      objectStorageConfig:
+        key: thanos.yaml
+        name: thanos-objstore-config
